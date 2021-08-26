@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Playfair Display"),
+    url("../fonts/playfair-display-v22-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/playfair-display-v22-cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Playfair Display"),
+    url("../fonts/playfair-display-v22-cyrillic-900.woff2") format("woff2"),
+    url("../fonts/playfair-display-v22-cyrillic-900.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Playfair Display"),
+    url("../fonts/playfair-display-v22-cyrillic-italic.woff2") format("woff2"),
+    url("../fonts/playfair-display-v22-cyrillic-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Montserrat"),
+    url("../fonts/montserrat-v18-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v18-cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Montserrat"),
+    url("../fonts/montserrat-v18-cyrillic-500.woff2") format("woff2"),
+    url("../fonts/montserrat-v18-cyrillic-500.woff") format("woff");
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+}

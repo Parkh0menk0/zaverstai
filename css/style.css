@@ -1,7 +1,10 @@
+/* Fonts */
+
 @font-face {
   font-family: "Playfair Display";
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
+
   font-display: swap;
   src: local("Playfair Display"),
     url("../fonts/playfair-display-v22-cyrillic-regular.woff2") format("woff2"),
@@ -10,12 +13,13 @@
 
 @font-face {
   font-family: "Playfair Display";
+  font-weight: 700;
   font-style: normal;
-  font-weight: 900;
+
   font-display: swap;
   src: local("Playfair Display"),
-    url("../fonts/playfair-display-v22-cyrillic-900.woff2") format("woff2"),
-    url("../fonts/playfair-display-v22-cyrillic-900.woff") format("woff");
+    url("../fonts/playfair-display-v22-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/playfair-display-v22-cyrillic-700.woff") format("woff");
 }
 
 @font-face {
@@ -30,8 +34,9 @@
 
 @font-face {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
+
   font-display: swap;
   src: local("Montserrat"),
     url("../fonts/montserrat-v18-cyrillic-regular.woff2") format("woff2"),
@@ -40,14 +45,304 @@
 
 @font-face {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
+
   font-display: swap;
   src: local("Montserrat"),
     url("../fonts/montserrat-v18-cyrillic-500.woff2") format("woff2"),
     url("../fonts/montserrat-v18-cyrillic-500.woff") format("woff");
 }
 
+/* Variables */
+
+:root {
+  --basic-white: #fff;
+  --basic-pink: #ae7c78;
+  --basic-dark-pink: #795654;
+  --basic-light-pink: #d89999;
+}
+
+/* Global */
+
 body {
   font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+
+  color: var(--basic-pink);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.title {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.subtitle {
+  font-weight: 500;
+}
+
+.btn {
+  background-color: var(--basic-light-pink);
+  color: var(--basic-white);
+  border-radius: 40px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--basic-dark-pink);
+}
+
+/* main-header */
+
+.main-header {
+  border-top: 1px solid var(--basic-pink);
+  border-bottom: 1px solid var(--basic-pink);
+}
+
+/* main-nav */
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__link {
+  color: var(--basic-pink);
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: var(--basic-dark-pink);
+}
+
+/* entry */
+
+.entry__title {
+  font-weight: 400;
+  font-size: 44px;
+}
+
+.entry__description {
+  font-size: 24px;
+}
+
+/* features */
+
+.features__list {
+  list-style: none;
+}
+
+.features__subtitle {
+  font-weight: 500;
+}
+
+/* popular */
+
+.popular__subtitle {
+  font-size: 24px;
+}
+
+.popular__price {
+  font-size: 24px;
+}
+
+/* slider */
+
+.slider__list {
+  list-style: none;
+}
+
+.slider__btn {
+  background-color: transparent;
+  border: none;
+}
+
+.slider__btn svg {
+  fill: var(--basic-pink);
+  cursor: pointer;
+}
+
+.slider__btn:hover svg,
+.slider__btn:focus svg {
+  fill: var(--basic-dark-pink);
+}
+
+/* gallery */
+
+.gallery__list {
+  list-style: none;
+}
+
+.gallery__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 387px;
+  height: 442px;
+  border-radius: 10px;
+  color: var(--basic-white);
+  background-blend-mode: multiply;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(174, 124, 120, 0.6);
+}
+
+.gallery__link:hover,
+.gallery__link:focus {
+  background-color: transparent;
+}
+
+.gallery__link--wedding {
+  background-image: url("../img/bg-wedding-bouquets-desktop@1x.jpg");
+}
+
+.gallery__link--peonies {
+  background-image: url("../img/bg-bouquet-of-peonies-desktop@1x.jpg");
+}
+
+.gallery__link--choose {
+  background-image: url("../img/bg-choose-a-bouquet-desktop@1x.jpg");
+}
+
+.gallery__subtitle {
+  margin: 0;
+}
+
+.gallery__description {
+  margin: 0;
+}
+
+/* discount */
+
+.discount__title {
+  font-weight: 400;
+}
+
+.discount__description {
+  font-size: 24px;
+}
+/* pathway */
+
+.pathway__list {
+  list-style: none;
+}
+
+/* news */
+
+.news__description {
+  font-size: 24px;
+}
+
+/* reviews */
+
+.reviews__list {
+  list-style: none;
+}
+
+.reviews__item {
+  text-align: center;
+}
+
+.reviews__author {
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* main-footer */
+
+.main-footer {
+  background-color: var(--basic-pink);
+}
+
+/* contacts */
+
+.contacts__wrapper {
+  background-color: var(--basic-white);
+}
+
+.contacts__list dd {
+  font-weight: 500;
+}
+
+.contacts__list a {
+  color: var(--basic-pink);
+}
+
+.contacts__list a:hover,
+.contacts__list a:focus {
+  color: var(--basic-dark-pink);
+}
+
+/* footer-nav */
+
+.footer-nav__list {
+  list-style: none;
+}
+
+.footer-nav__link {
+  color: var(--basic-white);
+}
+
+.footer-nav__link:hover,
+.footer-nav__link:focus {
+  color: var(--basic-dark-pink);
+}
+
+/* social */
+
+.social {
+  list-style: none;
+}
+
+.social__link svg {
+  fill: var(--basic-light-pink);
+}
+
+.social--footer svg {
+  fill: var(--basic-white);
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  fill: var(--basic-dark-pink);
 }

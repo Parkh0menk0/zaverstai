@@ -65,6 +65,10 @@
 
 /* Global */
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
@@ -72,12 +76,18 @@ body {
   font-style: normal;
   line-height: 1.2;
 
+  display: grid;
+
   min-width: 1200px;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 
   color: var(--basic-pink);
   background-color: var(--basic-white);
+
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {

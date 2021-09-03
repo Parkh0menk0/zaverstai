@@ -63,7 +63,6 @@
   --basic-dark-pink: #795654;
   --basic-light-pink: #d89999;
   --basic-grey: #f7fafc;
-  --retina-dppx: ;
 }
 
 /* Global */
@@ -149,12 +148,12 @@ input[type="radio"].visually-hidden {
   width: 285px;
   padding: 30px 10px;
 
+  transition: background-color 0.2s ease-in-out;
   text-align: center;
 
   color: var(--basic-white);
   border-radius: 40px;
   background-color: var(--basic-light-pink);
-  transition: background-color 0.2s ease-in-out;
 }
 
 .btn:hover,
@@ -187,18 +186,21 @@ input[type="radio"].visually-hidden {
 
 .main-nav__list {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
   column-gap: 224px;
 }
 
 .main-nav__left {
   display: grid;
+
   grid-template-columns: 1fr 3fr 1fr;
   justify-items: center;
 }
 
 .main-nav__right {
   display: grid;
+
   grid-template-columns: 2fr 2fr 1fr;
   justify-items: center;
 }
@@ -209,10 +211,10 @@ input[type="radio"].visually-hidden {
 
   padding: 23px 0 21px;
 
+  transition: color 0.2s ease-in-out;
   word-break: break-word;
 
   color: var(--basic-pink);
-  transition: color 0.2s ease-in-out;
 }
 
 .main-nav__link:first-child {
@@ -414,9 +416,9 @@ input[type="radio"].visually-hidden {
 
 .slider__btn svg {
   cursor: pointer;
+  transition: fill 0.2s ease-in-out;
 
   fill: var(--basic-pink);
-  transition: fill 0.2s ease-in-out;
 }
 
 .slider__btn:hover svg,
@@ -449,6 +451,8 @@ input[type="radio"].visually-hidden {
   width: 387px;
   height: 442px;
 
+  transition: background-color 0.2s ease-in-out;
+
   color: var(--basic-white);
   border-radius: 10px;
   background-color: rgba(174, 124, 120, 0.6);
@@ -459,7 +463,6 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   background-blend-mode: multiply;
-  transition: background-color 0.2s ease-in-out;
 }
 
 .gallery__link:hover,
@@ -813,8 +816,9 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts__list a {
-  color: var(--basic-pink);
   transition: color 0.2s ease-in-out;
+
+  color: var(--basic-pink);
 }
 
 .contacts__list a:hover,
@@ -843,8 +847,9 @@ input[type="radio"].visually-hidden {
 
   padding: 5px 0;
 
-  color: var(--basic-white);
   transition: color 0.2s ease-in-out;
+
+  color: var(--basic-white);
 }
 
 .footer-nav__link:hover,
@@ -879,8 +884,9 @@ input[type="radio"].visually-hidden {
 }
 
 .social--footer svg {
-  fill: var(--basic-white);
   transition: fill 0.2s ease-in-out;
+
+  fill: var(--basic-white);
 }
 
 .social__link:hover svg,

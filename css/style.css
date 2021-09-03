@@ -63,6 +63,7 @@
   --basic-dark-pink: #795654;
   --basic-light-pink: #d89999;
   --basic-grey: #f7fafc;
+  --retina-dppx: ;
 }
 
 /* Global */
@@ -885,4 +886,18 @@ input[type="radio"].visually-hidden {
 .social__link:hover svg,
 .social__link:focus svg {
   fill: var(--basic-dark-pink);
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .gallery__link--wedding {
+    background-image: url("../img/gallery/bg-wedding-bouquets-desktop@2x.jpg");
+  }
+
+  .gallery__link--peonies {
+    background-image: url("../img/gallery/bg-bouquet-of-peonies-desktop@2x.jpg");
+  }
+
+  .gallery__link--choose {
+    background-image: url("../img/gallery/bg-choose-a-bouquet-desktop@2x.jpg");
+  }
 }

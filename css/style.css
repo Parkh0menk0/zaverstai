@@ -240,6 +240,17 @@ input[type="radio"].visually-hidden {
   height: 33px;
 }
 
+.logo[href] {
+  transition: opacity 0.2s ease-in-out;
+
+  opacity: 1;
+}
+
+.logo[href]:hover,
+.logo[href]:focus {
+  opacity: 0.5;
+}
+
 /* container */
 
 .container {
